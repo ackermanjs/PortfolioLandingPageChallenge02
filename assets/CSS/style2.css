@@ -1,0 +1,42 @@
+.primary-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links {
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+.hero h2 {
+  text-align: right;
+}
+.about-me {
+  display: flex;
+  /* justify-content: space-between;
+  text-align: left; */
+  gap: 2rem;
+}
+.my-projects {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, fr);
+}
+.contact {
+  display: flex;
+}
+.contact ul li {
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+  padding: 8px 12px;
+  justify-content: space-evenly;
+}
+.image-container-one {
+}
+.image-container-two {
+}
+.image-container-three {
+}
