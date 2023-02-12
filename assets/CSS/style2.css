@@ -1,6 +1,17 @@
+body{
+  background-color: #DFE0E2;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
 .primary-nav {
   display: flex;
   justify-content: space-between;
+  background-color: #2F323A;
+}
+.primary-nav h1 {
+  font-size: 36px;
+  color: #AAAAAA;
+padding-left: 50px;
 }
 .nav-links {
   text-align: right;
@@ -8,35 +19,98 @@
 .nav-links ul li {
   list-style: none;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 8px 50px;
+
+}
+.nav-links ul li a {
+  color: #EB5160;
+  text-transform: none;
+}
+.hero{
+  background-color: #AAAAAA;
+  height: 35vh;
+  width: auto;
+  background-image:url('/assets/images/andrew-kliatskyi-iQUf7gndqXE-unsplash.jpg');
+  position: relative;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
 }
 .hero h2 {
   text-align: right;
+  padding: 5px;
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  color: #AAAAAA;
+}
+.my-projects {
+  display: flex;
+  margin-bottom: 50px;
+}
+.image-container-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.image-wrapper {
+  flex-basis: 40vw;
+  margin: 5px;
+  border: 8px solid #2F323A;
+  position: relative;
+}
+.primary-image {
+  flex-basis: calc(80vw + 25px);
+  max-width: calc(80vw + 25px);
+  min-width: calc(80vw + 25px);
+}
+.images {
+  width: 100%;
+  height: 100%;
+}
+.cover {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  background-color: #B7999C;
+  font-size: 24px;
+  padding: 20px;
 }
 .about-me {
   display: flex;
-  /* justify-content: space-between;
-  text-align: left; */
-  gap: 2rem;
+  margin-bottom: 50px;
+  padding-top: 25px;
 }
-.my-projects {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(2, fr);
+.section-title {
+  flex-basis: 250px;
+  max-width: 250px;
+  min-width: 250px;
+  text-align: right;
+  padding-right: 50px;
+  border-right: 5px solid #EB5160;
+}
+.section-content {
+  flex-grow: 3;
+  padding-left: 50px;
 }
 .contact {
   display: flex;
+  margin-bottom: 50px;
 }
 .contact ul li {
   list-style: none;
   display: inline-block;
   text-align: left;
   padding: 8px 12px;
-  justify-content: space-evenly;
 }
-.image-container-one {
-}
-.image-container-two {
-}
-.image-container-three {
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+  }
+  .section-title {
+    max-width: none;
+    min-width: none;
+    border-right: none;
+    text-align: center;
+  }
 }
